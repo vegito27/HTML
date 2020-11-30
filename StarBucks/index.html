@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>StarBucks Website Landing Page</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section>
+		<div class="circle">
+				
+			</div>
+
+		<header>
+			
+			<a href="#" title=""><img src="images/logo.png" class="logo"></a>	
+			<ul>
+				<li><a href="#" title="">Home</a></li>
+				<li><a href="#" title="">Menu</a></li>
+				<li><a href="#" title="">What's new</a></li>
+				<li><a href="#" title="">Contact</a></li>
+
+			</ul>
+		</header>
+			<div class="content">
+
+				<div class="textBox">
+					<h2>Its not just coffee <br>It's a <span>StarBucks </span></h2>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="#" >Learn More</a>
+				</div>
+
+					<div class="imgBox">
+						<img src="images/img1.png" class="starbucks">
+					</div>
+				</div>
+			</div>
+
+
+				<ul class="thumb">
+					<li><img src="images/thumb1.png" onclick="imgSlide('images/img1.png'); changeCircleColor('#017143')" ></li>
+					<li><img src="images/thumb2.png" onclick="imgSlide('images/img2.png'); changeCircleColor('#eb7495')"></li>
+					<li><img src="images/thumb3.png" onclick="imgSlide('images/img3.png');changeCircleColor('#d752b1')"></li>
+
+				</ul>
+
+				<ul class="sci">
+					<li><a href=""><img src="images/facebook.png"></a></li>
+					<li><a href=""><img src="images/twitter.png"></a></li>
+					<li><a href=""><img src="images/instagram.png"></a></li>
+
+				</ul>
+
+
+
+		</section>	
+		<script type="text/javascript" charset="utf-8" defer>
+
+			function imgSlide(anything){
+				console.log(anything);
+				document.querySelector('.starbucks').src=anything
+
+			}
+
+
+			
+			function changeCircleColor(color){
+				const circle=document.querySelector('.circle')
+
+				circle.style.backgroundColor=color;
+
+
+
+			}
+
+
+		</script>
+		
+</body>
+</html>
+
+
+
+
